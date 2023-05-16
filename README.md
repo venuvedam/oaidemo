@@ -1,11 +1,11 @@
 # oaidemo
 This has two python demos. These demos do not claim to solve world hunger or climate crisis. They are just technology demos that show how a python programme can call an Azure OpenAI API to get the response. Feel free to fork this repo and build on them. 
 
-##Demos
+## Demos
 1. "Create an automated email response" based on data entered by the user.
 2. "Summarize a small text file" - Renter Reform Act in the UK as an example.
 
-##Architecture
+## Architecture
 Python code authenticates itself in Azure Active Directory through an App Registration. 
 Azure OpenAI API Key is stored in Azure Key Vault.
 
