@@ -8,10 +8,13 @@ MyTextFile=open("RentersReform.txt", "r")
 MyString=MyTextFile.read()
 MyTextFile.close()
 
-azurekvuri = "https://venukv.vault.azure.net/"
-azurekeyname = "oai-api-key"
-apibase = "https://venuoai.openai.azure.com/"
-deploymentName = "VenuDavinci003"
+#Azure Key Vault Details
+azurekvuri = "Your Azure Key Vault URI here"
+azurekeyname = "Name of the API Key in Key Vault"
+
+#Azure OpenAI Instance Details
+apibase = "Your OpenAI Instance base URL"
+deploymentName = "Your Model Deployment Name"
 
 oaiPrompt = "Summarize this in five bullet points: " + MyString
 
