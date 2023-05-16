@@ -26,4 +26,4 @@ Also, make sure that all the libraries are installed in your environment. For in
 ```
 pip install openai
 ```
-
+I used Github Codespaces to run these demos and it works really well. If you do not have Python installed locally, you can explore this option. 
