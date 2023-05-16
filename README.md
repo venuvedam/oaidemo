@@ -1,4 +1,4 @@
-# oaidemo
+# Python - Azure OpenAI Demo
 This has two python demos. These demos do not claim to solve world hunger or climate crisis. They are just technology demos that show how a python programme can call an Azure OpenAI API to get the response. Feel free to fork this repo and build on them. 
 
 ## Demos
@@ -8,6 +8,8 @@ This has two python demos. These demos do not claim to solve world hunger or cli
 ## Architecture
 Python code authenticates itself in Azure Active Directory through an App Registration. 
 Azure OpenAI API Key is stored in Azure Key Vault.
+
+![Architecture Diagram of the Python Demo - showing how the code interacts with AAD, Azure KeyVault, and Azure OpenAI instance](./Python-OAIDemo-Arch.png)
 
 You need to set the following environment variables before you run the python code.
 
