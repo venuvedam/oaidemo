@@ -11,16 +11,20 @@ from oai import processData
 # description = input("Enter the description of the ask: ")
 # geo = input("Enter the Geo: ") 
 name="Venu"
-partner="TCS"
-customer="Civca Australia"
+partner="Fabrikam"
+customer="Contoso"
 solution_area="Data and AI"
-description="What we have in mind is some independent review from Microsoft of Altitude for both the technical deployment and cost optimisation (FinOps) to ensure we are in the best position to continue the migration of our Australian customers to Azure at pace. Context below: As briefly discussed last week on our call, Civica Australia is now starting to onboard a significant amount of Local Government customers onto our ‘Altitude ERP’ deployed in Azure. For context we now have three Beta customer live on Altitude and another 10 in the process to go live, and hope we might add double digits yearly for the coming years. A challenge for Altitude is around storage and logs which makes up a large % of our Azure spend. Altitude is our flagship product in Australia and a significant group-wide contributor to our existing and future ($30m+ MACC due to renew in June) and we would like reassurance that we are taking a best practice approach which helps us to control our cloud costs into the future."
+description="Contoso is embarking on a cloud transformation exercise with Fabrikam helping them onboard 3 mission critical applications onto Azure. Need help with reviewing the solution architecture and suggest best practices."
 geo="APAC"
-azurekvuri = "https://venukv.vault.azure.net/"
-azurekeyname = "oai-api-key"
-apibase = "https://venuoai.openai.azure.com/"
-deploymentName = "VenuDavinci003"
 
+#Azure Key Vault Details
+azurekvuri = "Your Azure Key Vault URI here"
+azurekeyname = "Name of the API Key in Key Vault"
+
+#Azure OpenAI Instance Details
+apibase = "Your OpenAI Instance base URL"
+deploymentName = "Your Model Deployment Name"
+# You can modify the prompt to suit your use case. 
 oaiPrompt = 'Write an email response as if you are a PhD student responding officially to '+name+ \
     ' acknowledging the request for helping the partner organization named'+ partner + \
     ' working with the customer organization named '+customer+ 'in the area '+solution_area+ \
