@@ -19,3 +19,9 @@ export AZURE_SUBSCRIPTION_ID=<Your Azure Subscription ID>
 
 ```
 Note: This implementation assumes that your Azure Key Vault is in the same subscription. 
+
+Also, make sure that all the libraries are installed in your environment. For instance,
+```
+pip install openai
+```
+
